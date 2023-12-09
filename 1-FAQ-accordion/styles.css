@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:99vh;
+    background-image: url('./images/background-pattern-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    overflow: hidden;
+}
+
+.container {
+    color: hsl(292, 42%, 14%);
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 20px;
+    width: 650px;
+    padding: 0px 40px 20px 40px;
+    box-shadow: 1px 1px 50px -25px rgba(0,0,0,0.75);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.question {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content:space-between;
+}
+
+h1 {
+    padding-left: 25px;
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.faq {
+    border-bottom: hsla(0, 1%, 73%, 0.363) 1px solid;
+    padding-bottom: 20px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    color: hsl(292, 16%, 49%);
+    font-size: 16px;
+    transition: max-height 0.5s ease-out;
+}
+
+.svg {
+    cursor: pointer;
+    background: url('./images/icon-minus.svg');
+    transition: 0.5s ease;
+}
+
+
+.faq.active .answer {
+    max-height: 80px;
+}
+
+.faq.active .svg {
+    background: transparent;
+    background: url('./images/icon-plus.svg');
+}
+
+
+
