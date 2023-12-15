@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ededed;
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    font-family: inherit;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 20px;
+    height: 450px;
+    width: 650px;
+    background: #fff;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    background:  linear-gradient(to bottom,
+        hsl(252, 100%, 67%),
+        hsl(241, 81%, 54%)
+    );
+    border-radius: 20px;
+    height: 450px;
+    width: 325px;
+    align-items: center;
+}
+
+.txt1 {
+    padding-top: 35px;
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(241, 100%, 89%);
+}
+
+.circle {
+    background:  linear-gradient(to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+    );
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 60px;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+}
+
+.p1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+}
+
+h4 {
+    padding-top: 25px;
+    font-weight: 500;
+    font-size: 28px;
+    color: hsl(0, 0%, 100%);
+}
+
+.p2 {
+    padding-top: 15px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+}
+
+.summary {
+    background: #fff;
+    border-radius: 0px 20px 20px 0px;
+    height: 450px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt2 {
+    align-self:start;
+    color: hsl(224, 30%, 27%);
+    padding-top: 35px;
+    padding-left: 40px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.data {
+    margin-top: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dato0 {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: hsla(0, 100%, 67%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.flex-group {
+    display: flex;
+}
+
+.dato0 h5 {
+    color: hsl(0, 100%, 67%);
+    font-size: 16px;
+}
+
+.dato1 {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: hsl(39, 100%, 56%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.dato1 h5 {
+    color: hsl(39, 100%, 56%);
+    font-size: 16px;
+}
+
+.dato2 {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: hsl(166, 100%, 37%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.dato2 h5 {
+    color: hsl(166, 100%, 37%);
+    font-size: 16px;
+}
+
+.dato3 {
+    border-radius: 10px;
+    background: hsl(234, 85%, 45%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.dato3 h5 {
+    color: hsl(234, 85%, 45%);
+    font-size: 16px;
+}
+
+.cien {
+    color:hsl(224, 30%, 27%, 0.7);
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.summary-score {
+    margin-right: 10px;
+    color: gray;
+}
+
+span {
+    color: hsl(224, 30%, 27%);
+}
+
+
+
+
+button {
+    background: hsl(224, 30%, 27%);
+    width: 250px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 0px 15px 0px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+@media (max-width:650px) {
+    .container {
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 0px;
+        margin-top: 0px;
+        border-radius: 0;
+    }
+
+    .result {
+        width: 100vw;
+        margin-top: 0px;
+        border-radius: 0px 0px 20px 20px;
+
+    }
+
+    .summary {
+        width: 100vw;
+    }
+
+    .data {
+        margin-left: 20px;
+        width:inherit;
+    }
+
+    .dato0, .dato1, .dato2, .dato3 {
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+
+}
