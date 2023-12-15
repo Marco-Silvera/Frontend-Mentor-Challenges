@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #ededed;
+    background: #fff;
     font-family: 'Hanken Grotesk', sans-serif;
     height: 100vh;
     display: flex;
@@ -22,9 +22,10 @@ body {
     flex-direction: row;
     border: none;
     border-radius: 20px;
-    height: 450px;
-    width: 650px;
+    height: 500px;
+    width: 700px;
     background: #fff;
+    box-shadow: 1px 1px 50px -25px rgba(0,0,0,0.3);
 }
 
 .result {
@@ -35,8 +36,8 @@ body {
         hsl(241, 81%, 54%)
     );
     border-radius: 20px;
-    height: 450px;
-    width: 325px;
+    height: 500px;
+    width: 350px;
     align-items: center;
 }
 
@@ -52,14 +53,14 @@ body {
     hsla(256, 72%, 46%, 1),
     hsla(241, 72%, 46%, 0)
     );
-    height: 170px;
-    width: 170px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center ;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 h3 {
@@ -84,8 +85,8 @@ h4 {
 .p2 {
     padding-top: 15px;
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
     font-size: 16px;
     font-weight: 500;
     color: hsl(241, 100%, 89%);
@@ -94,8 +95,8 @@ h4 {
 .summary {
     background: #fff;
     border-radius: 0px 20px 20px 0px;
-    height: 450px;
-    width: 325px;
+    height: 500px;
+    width: 355px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +112,7 @@ h4 {
 }
 
 .data {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -129,7 +130,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 60px;
 }
 
 .flex-group {
@@ -148,7 +149,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 60px;
 }
 
 .dato1 h5 {
@@ -163,7 +164,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 60px;
 }
 
 .dato2 h5 {
@@ -177,7 +178,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 60px;
 }
 
 .dato3 h5 {
@@ -218,7 +219,7 @@ button {
     margin-top: 30px;
 }
 
-@media (max-width:650px) {
+@media (max-width:700px) {
     .container {
         flex-direction: column;
         width: 100vw;
