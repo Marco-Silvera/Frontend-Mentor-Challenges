@@ -23,7 +23,7 @@ function traerDatos() {
                 data.innerHTML += `
                 <div class="dato${i}">
                     <div class="flex-group">
-                        <img src="${item.icon}" width="20" height="20"/>
+                        <img src="${item.icon}" width="20" height="20" alt="icono"/>
                         <h5>${item.category}</h5>
                     </div>
                     <p class="summary-score"><span>${item.score}</span> / 100</p>
