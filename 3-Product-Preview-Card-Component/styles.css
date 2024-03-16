@@ -24,7 +24,7 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    height: 500px;
+    min-height: 500px;
     max-width: 600px;
     background: #fff;
     border-radius: 10px;
@@ -35,8 +35,9 @@ body {
     max-width: 50%;
 }
 
-h1, .price {
-    font-family:  'Fraunces', sans-serif;
+h1,
+.price {
+    font-family: 'Fraunces', sans-serif;
     font-weight: 700;
 }
 
@@ -50,11 +51,14 @@ h2 {
     font-weight: 700;
 }
 
-p, h4 {
+p,
+h4 {
     font-weight: 500;
 }
 
-h2, p, h4 {
+h2,
+p,
+h4 {
     font-size: 14px;
     color: hsl(228, 12%, 48%);
     font-family: 'Montserrat', sans-serif;
@@ -74,7 +78,7 @@ button {
     padding: 0;
     border: none;
     height: 50px;
-    width:  100%;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     border-radius: 10px;
@@ -91,12 +95,12 @@ button {
     display: flex;
     align-items: center;
     gap: 20px;
-    height: 40px;
+    min-height: 40px;
 }
 
 .card {
     width: 50%;
-    padding:20px 30px 20px 30px;
+    padding: 20px 30px 20px 30px;
 }
 
 
@@ -104,12 +108,12 @@ button {
     .price {
         height: 80px;
     }
-} 
+}
 
 @media (max-width: 540px) {
     .container {
         flex-direction: column;
-        height: 600px;
+        min-height: 600px;
         width: 100%;
     }
 
@@ -119,7 +123,7 @@ button {
     }
 
     .card {
-        height: 300px;
+        min-height: 300px;
         width: 100%;
         padding: 20px;
     }
@@ -128,7 +132,8 @@ button {
         font-size: 30px;
     }
 
-    .card h1, .card h2 {
+    .card h1,
+    .card h2 {
         margin: 0;
     }
 }
@@ -136,5 +141,15 @@ button {
 @media (max-width: 340px) {
     button {
         margin-top: 0;
+    }
+
+    .price {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .price h4 {
+        margin: 0px;
+        margin-bottom: 20px;
     }
 }
