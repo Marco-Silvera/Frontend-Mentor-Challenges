@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'Young-Serif': ['Young Serif', 'serif'],
-        'Outfit': ['Outfit', 'serif']
+        'Outfit': ['Outfit', 'serif'],
+        'Inter': ['Inter', 'serif'],
       }
     },
   },
