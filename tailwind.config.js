@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        //'Young-Serif': ['Young Serif', 'serif'],
+        'Young-Serif': ['Young Serif', 'serif'],
         'Outfit': ['Outfit', 'serif']
       }
     },
