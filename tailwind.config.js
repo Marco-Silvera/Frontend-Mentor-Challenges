@@ -7,6 +7,7 @@ module.exports = {
         'Young-Serif': ['Young Serif', 'serif'],
         'Outfit': ['Outfit', 'serif'],
         'Inter': ['Inter', 'serif'],
+        'Figtree': ['Figtree', 'serif']
       }
     },
   },
