@@ -24,7 +24,7 @@
 </style>
 
 <body class="font-Jakarta font-medium bg-[#E5EFFA] flex justify-center">
-    <section class="main p-4 bg-white sm:w-[700px] sm:mx-5 sm:my-16 sm:py-6 sm:rounded-2xl">
+    <section class="main p-4 bg-white sm:w-[700px] sm:mx-5 sm:my-16 sm:px-6 sm:py-6 sm:rounded-2xl">
         <div class="notifications flex justify-between mb-8">
             <h3 class="font-extrabold text-xl">Notifications<span
                     class="ml-3 px-3 py-1 bg-[#09317A] rounded-md text-white text-lg" id="number"></span>
@@ -85,15 +85,18 @@
         </div>
         <div class="post p-4 rounded-lg flex mb-4">
             <img class="h-11 mr-4" src="img/avatar-kimberly-smith.webp" alt="Perfil de Mark">
-            <div>
-                <p>
-                    <span class="name font-extrabold mr-1 hover:text-[#09317A] cursor-pointer">Kimberly Smith</span>
-                    <span class="text-[#5E6777] mr-1">commented on your picture</span>
-                    <span class="status"></span>
-                </p>
-                <p class="time text-[#939CAD] font-normal mb-3">1 week ago</p>
+            <div class="flex justify-between w-full">
+                <div>
+                    <p>
+                        <span class="name font-extrabold mr-1 hover:text-[#09317A] cursor-pointer">Kimberly Smith</span>
+                        <span class="text-[#5E6777] mr-1">commented on your picture</span>
+                        <span class="status"></span>
+                    </p>
+                    <p class="time text-[#939CAD] font-normal mb-3">1 week ago</p>
+                </div>
+                <img src="img/image-chess.webp" alt="Partida de ajedrez" class="h-11 cursor-pointer ml-3">
             </div>
-            <img src="img/image-chess.webp" alt="Partida de ajedrez" class="h-11 cursor-pointer">
+
         </div>
         <div class="post p-4 rounded-lg flex mb-4">
             <img class="h-11 mr-4" src="img/avatar-nathan-peterson.webp" alt="Perfil de Mark">
@@ -108,11 +111,6 @@
                     <span class="status"></span>
                 </p>
                 <p class="time text-[#939CAD] font-normal mb-3">2 weeks ago</p>
-                <div class="p-4 border-[1px] rounded-md hover:bg-[#DDE6ED] cursor-pointer">
-                    <p class="reaction text-[#5E6777]">Hello, thanks for setting up the Chess Club.
-                        I've been a member
-                        for a few weeks now and I'm already having lots of fun and improving my game.</p>
-                </div>
             </div>
         </div>
         <div class="post p-4 rounded-lg flex">
