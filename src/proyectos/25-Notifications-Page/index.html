@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications Page</title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<style>
+    .not-read {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-left: 8px;
+        background: #F55350;
+    }
+</style>
+
+<body class="font-Jakarta font-medium bg-[#E5EFFA] flex justify-center">
+    <section class="main p-4 bg-white sm:w-[700px] sm:mx-5 sm:my-16 sm:py-6 sm:rounded-2xl">
+        <div class="notifications flex justify-between mb-8">
+            <h3 class="font-extrabold text-xl">Notifications<span
+                    class="ml-3 px-3 py-1 bg-[#09317A] rounded-md text-white text-lg" id="number"></span>
+            </h3>
+            <p class="font-medium text-[#5E6777] hover:text-[#09317A] cursor-pointer" id="mark-all">Mark all as read</p>
+        </div>
+        <div class="post bg-[#F6F9FC] p-4 rounded-lg flex mb-4">
+            <img class="h-11 mr-4" src="img/avatar-mark-webber.webp" alt="Perfil de Mark">
+            <div>
+                <p>
+                    <span class="name font-extrabold mr-1 hover:text-[#09317A] cursor-pointer">Mark Webber</span>
+                    <span class="text-[#5E6777] mr-1">reacted to your recent post</span>
+                    <span class="reaction text-[#5E6777] hover:text-[#09317A] font-extrabold cursor-pointer">My
+                        first
+                        tournament today!</span>
+                    <span class="status not-read"></span>
+                </p>
+                <p class="time text-[#939CAD] font-normal">1m ago</p>
+            </div>
+        </div>
+        <div class="post bg-[#F6F9FC] p-4 rounded-lg flex mb-4">
+            <img class="h-11 mr-4" src="img/avatar-angela-gray.webp" alt="Perfil de Mark">
+            <div>
+                <p>
+                    <span class="name font-extrabold mr-1 hover:text-[#09317A] cursor-pointer">Angela Gray</span>
+                    <span class="text-[#5E6777] mr-1">followed you</span>
+                    <span class="status not-read"></span>
+                </p>
+                <p class="time text-[#939CAD] font-normal">5m ago</p>
+            </div>
+        </div>
+        <div class="post bg-[#F6F9FC] p-4 rounded-lg flex mb-4">
+            <img class="h-11 mr-4" src="img/avatar-jacob-thompson.webp" alt="Perfil de Mark">
+            <div>
+                <p>
+                    <span class="name font-extrabold mr-1 hover:text-[#09317A] cursor-pointer">Jacob Thompson</span>
+                    <span class="text-[#5E6777] mr-1">has joined your group</span>
+                    <span class="reaction text-[#09317A] font-extrabold cursor-pointer">Chess Club</span>
+                    <span class="status not-read"></span>
+                </p>
+                <p class="time text-[#939CAD] font-normal">1 day ago</p>
+            </div>
+        </div>
+        <div class="post p-4 rounded-lg flex mb-4">
+            <img class="h-11 mr-4" src="img/avatar-rizky-hasanuddin.webp" alt="Perfil de Mark">
+            <div>
+                <p>
+                    <span class="name font-extrabold mr-1 hover:text-[#09317A] cursor-pointer">Risky Hasanuddin</span>
+                    <span class="text-[#5E6777] mr-1">sent you a private message</span>
+                    <span class="status"></span>
+                </p>
+                <p class="time text-[#939CAD] font-normal mb-3">5 days ago</p>
+                <div class="p-4 border-[1px] rounded-md hover:bg-[#DDE6ED] cursor-pointer">
+                    <p class="reaction text-[#5E6777]">Hello, thanks for setting up the Chess Club. I've been a member
+                        for a few weeks now and I'm already having lots of fun and improving my game.</p>
+                </div>
+            </div>
+        </div>
+        <div class="post p-4 rounded-lg flex mb-4">
+            <img class="h-11 mr-4" src="img/avatar-kimberly-smith.webp" alt="Perfil de Mark">
+            <div>
+                <p>
+                    <span class="name font-extrabold mr-1 hover:text-[#09317A] cursor-pointer">Kimberly Smith</span>
+                    <span class="text-[#5E6777] mr-1">commented on your picture</span>
+                    <span class="status"></span>
+                </p>
+                <p class="time text-[#939CAD] font-normal mb-3">1 week ago</p>
+            </div>
+            <img src="img/image-chess.webp" alt="Partida de ajedrez" class="h-11 cursor-pointer">
+        </div>
+        <div class="post p-4 rounded-lg flex mb-4">
+            <img class="h-11 mr-4" src="img/avatar-nathan-peterson.webp" alt="Perfil de Mark">
+            <div>
+                <p>
+                    <span class="name font-extrabold mr-1 hover:text-[#09317A] cursor-pointer">Nathan Peterson</span>
+                    <span class="text-[#5E6777] mr-1">reacted to your recent post</span>
+                    <span class="reaction text-[#5E6777] font-extrabold hover:text-[#09317A] cursor-pointer">5 end-game
+                        strategies to
+                        increase your win
+                        rate</span>
+                    <span class="status"></span>
+                </p>
+                <p class="time text-[#939CAD] font-normal mb-3">2 weeks ago</p>
+                <div class="p-4 border-[1px] rounded-md hover:bg-[#DDE6ED] cursor-pointer">
+                    <p class="reaction text-[#5E6777]">Hello, thanks for setting up the Chess Club.
+                        I've been a member
+                        for a few weeks now and I'm already having lots of fun and improving my game.</p>
+                </div>
+            </div>
+        </div>
+        <div class="post p-4 rounded-lg flex">
+            <img class="h-11 mr-4" src="img/avatar-anna-kim.webp" alt="Perfil de Mark">
+            <div>
+                <p>
+                    <span class="name font-extrabold mr-1 hover:text-[#09317A] cursor-pointer">Anna Kim</span>
+                    <span class="text-[#5E6777] mr-1">left the group</span>
+                    <span class="reaction text-[#09317A] font-extrabold cursor-pointer">Chess Club</span>
+                    <span class="status"></span>
+                </p>
+                <p class="time text-[#939CAD] font-normal mb-3">2 weeks ago</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
