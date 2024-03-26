@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social media dashboard with theme switcher</title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="dark:bg-[#1D1F29] bg-white dark:text-white text-[#1D1F29] font-Inter font-normal sm:px-32 px-10">
+    <section class="flex w-full sm:flex-row flex-col justify-between items-center mt-8 sm:gap-2">
+        <div
+            class="mb-6 pb-6 w-full sm:border-none border-b-[1px] dark:border-[#8A96C5] border-[#AEB2CB] sm:border-transparent ">
+            <h2 class="text-2xl font-bold">
+                Social Media Dashboard
+            </h2>
+            <p class="dark:text-[#8A96C5] text-[#62687D] font-medium">
+                Total Followers: 23,004
+            </p>
+        </div>
+        <div class="flex justify-between sm:justify-end items-center gap-4 pb-10 w-full">
+            <p class="dark:text-[#8A96C5] text-[#62687D] font-medium">
+                Dark Mode
+            </p>
+            <label for="darkmode"
+                class="bg-[#AEB2CB] rounded-full p-[3px] overflow-hidden cursor-pointer w-12 h-6 relative">
+                <input id="darkmode" type="checkbox" class="peer sr-only">
+                <div
+                    class="h-full w-full peer-checked:bg-gradient-to-r from-[#378EE6] to-[#3EDA81] absolute top-0 left-0">
+                </div>
+                <div
+                    class="w-[18px] h-[18px] bg-[#F0F2F9] rounded-full peer-checked:bg-[#1E202D] peer-checked:translate-x-[24px] transition-all">
+                </div>
+            </label>
+
+        </div>
+    </section>
+    <section class="grid justify-center content-center lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8">
+        <article
+            class="dark:bg-[#242A41] bg-[#F4F7FF] h-64 flex flex-col items-center justify-around relative py-5 rounded-md overflow-hidden">
+            <span class="w-full h-1 bg-[#188EF5] absolute top-0"></span>
+            <div class="flex gap-2">
+                <img src="img/icon-facebook.svg" alt="Facebook Logo" class="w-5 h-5">
+                <p class="dark:text-[#8A96C5] text-[#62687D] text-sm font-medium">
+                    @nathanf
+                </p>
+            </div>
+            <div>
+                <h2 class="text-5xl font-bold text-center">
+                    1987
+                </h2>
+                <p class="dark:text-[#8A96C5] text-[#62687D] tracking-[0.3em]">
+                    FOLLOWERS
+                </p>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="img/icon-up.svg" alt="Indicador de subida">
+                <p class="font-medium text-[#1DB389] text-sm">
+                    12 Today
+                </p>
+            </div>
+        </article>
+
+        <article
+            class="dark:bg-[#242A41] bg-[#F4F7FF] h-64 flex flex-col items-center justify-around relative py-5 rounded-md overflow-hidden">
+            <span class="w-full h-1 bg-[#1CA0F1] absolute top-0"></span>
+            <div class="flex gap-2">
+                <img src="img/icon-twitter.svg" alt="Twitter Logo" class="w-5 h-4">
+                <p class="dark:text-[#8A96C5] text-[#62687D] text-sm font-medium">
+                    @nathanf
+                </p>
+            </div>
+            <div>
+                <h2 class="text-5xl font-bold text-center">
+                    1044
+                </h2>
+                <p class="dark:text-[#8A96C5] text-[#62687D] tracking-[0.3em]">
+                    FOLLOWERS
+                </p>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="img/icon-up.svg" alt="Indicador de subida">
+                <p class="font-medium text-[#1DB389] text-sm">
+                    99 Today
+                </p>
+            </div>
+        </article>
+
+        <article
+            class="dark:bg-[#242A41] bg-[#F4F7FF] h-64 flex flex-col items-center justify-around relative py-5 rounded-md overflow-hidden">
+            <span class="w-full h-1 bg-gradient-to-r from-[#FCC368] to-[#DE4896] absolute top-0"></span>
+            <div class="flex gap-2">
+                <img src="img/icon-instagram.svg" Facebook Logo" class="w-5 h-5">
+                <p class="dark:text-[#8A96C5] text-[#62687D] text-sm font-medium">
+                    @realnathanf
+                </p>
+            </div>
+            <div>
+                <h2 class="text-5xl font-bold text-center">
+                    11k
+                </h2>
+                <p class="dark:text-[#8A96C5] text-[#62687D] tracking-[0.3em]">
+                    FOLLOWERS
+                </p>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="img/icon-up.svg" alt="Indicador de subida">
+                <p class="font-medium text-[#1DB389] text-sm">
+                    1099 Today
+                </p>
+            </div>
+        </article>
+
+        <article
+            class="dark:bg-[#242A41] bg-[#F4F7FF] h-64 flex flex-col items-center justify-around relative py-5 rounded-md overflow-hidden">
+            <span class="w-full h-1 bg-[#C30229] absolute top-0"></span>
+            <div class="flex gap-2">
+                <img src="img/icon-youtube.svg" alt="Facebook Logo" class="w-5 h-5">
+                <p class="dark:text-[#8A96C5] text-[#62687D] text-sm font-medium">
+                    @nathanf
+                </p>
+            </div>
+            <div>
+                <h2 class="text-5xl font-bold text-center">
+                    1987
+                </h2>
+                <p class="dark:text-[#8A96C5] text-[#62687D] tracking-[0.3em]">
+                    FOLLOWERS
+                </p>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="img/icon-down.svg" alt="Indicador de bajada">
+                <p class="font-medium text-[#DC414B] text-sm">
+                    144 Today
+                </p>
+            </div>
+        </article>
+
+    </section>
+
+    <div class="mt-10 mb-5">
+        <h2 class="dark:text-white text-[#62687D] text-2xl font-bold">
+            Overview - Today
+        </h2>
+    </div>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-10">
+        <article class="dark:bg-[#242A41] bg-[#F4F7FF] p-8 h-44 flex justify-between rounded-md">
+            <div class="flex flex-col justify-between">
+                <p class="dark:text-[#8A96C5] text-[#62687D] font-medium">
+                    Page Views
+                </p>
+                <h3 class="text-4xl font-bold">
+                    87
+                </h3>
+            </div>
+
+            <div class="flex flex-col justify-between">
+                <img src="img/icon-facebook.svg" alt="Facebook logo" class="w-5 h-5 ml-auto">
+                <div class="flex items-center gap-2">
+                    <img src="img/icon-up.svg" alt="Indicador de subida">
+                    <p class="font-medium text-[#1DB389] text-sm">
+                        3%
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="dark:bg-[#242A41] bg-[#F4F7FF] p-8 h-44 flex justify-between rounded-md">
+            <div class="flex flex-col justify-between">
+                <p class="dark:text-[#8A96C5] text-[#62687D] font-medium">
+                    Likes
+                </p>
+                <h3 class="text-4xl font-bold">
+                    52
+                </h3>
+            </div>
+
+            <div class="flex flex-col justify-between">
+                <img src="img/icon-facebook.svg" alt="Facebook logo" class="w-5 h-5 ml-auto">
+                <div class="flex items-center gap-2">
+                    <img src="img/icon-down.svg" alt="Indicador de subida">
+                    <p class="font-medium text-[#DC414B] text-sm">
+                        2%
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="dark:bg-[#242A41] bg-[#F4F7FF] p-8 h-44 flex justify-between rounded-md">
+            <div class="flex flex-col justify-between">
+                <p class="dark:text-[#8A96C5] text-[#62687D] font-medium">
+                    Likes
+                </p>
+                <h3 class="text-4xl font-bold">
+                    5462
+                </h3>
+            </div>
+
+            <div class="flex flex-col justify-between">
+                <img src="img/icon-instagram.svg" alt="Instagram logo" class="w-5 h-5 ml-auto">
+                <div class="flex items-center gap-2">
+                    <img src="img/icon-up.svg" alt="Indicador de subida">
+                    <p class="font-medium text-[#1DB389] text-sm">
+                        2257%
+                    </p>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="dark:bg-[#242A41] bg-[#F4F7FF] p-8 h-44 flex justify-between rounded-md">
+            <div class="flex flex-col justify-between">
+                <p class="dark:text-[#8A96C5] text-[#62687D] font-medium">
+                    Profile Views
+                </p>
+                <h3 class="text-4xl font-bold">
+                    52k
+                </h3>
+            </div>
+
+            <div class="flex flex-col justify-between">
+                <img src="img/icon-instagram.svg" alt="Instagram logo" class="w-5 h-5 ml-auto">
+                <div class="flex items-center gap-2">
+                    <img src="img/icon-up.svg" alt="Indicador de subida">
+                    <p class="font-medium text-[#1DB389] text-sm">
+                        1375%
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="dark:bg-[#242A41] bg-[#F4F7FF] p-8 h-44 flex justify-between rounded-md">
+            <div class="flex flex-col justify-between">
+                <p class="dark:text-[#8A96C5] text-[#62687D] font-medium">
+                    Retweets
+                </p>
+                <h3 class="text-4xl font-bold">
+                    117
+                </h3>
+            </div>
+
+            <div class="flex flex-col justify-between">
+                <img src="img/icon-twitter.svg" alt="Twitter logo" class="w-5 h-5 ml-auto">
+                <div class="flex items-center gap-2">
+                    <img src="img/icon-up.svg" alt="Indicador de subida">
+                    <p class="font-medium text-[#1DB389] text-sm">
+                        303%
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="dark:bg-[#242A41] bg-[#F4F7FF] p-8 h-44 flex justify-between rounded-md">
+            <div class="flex flex-col justify-between">
+                <p class="dark:text-[#8A96C5] text-[#62687D] font-medium">
+                    Likes
+                </p>
+                <h3 class="text-4xl font-bold">
+                    507
+                </h3>
+            </div>
+
+            <div class="flex flex-col justify-between">
+                <img src="img/icon-twitter.svg" alt="Twitter logo" class="w-5 h-5 ml-auto">
+                <div class="flex items-center gap-2">
+                    <img src="img/icon-up.svg" alt="Indicador de subida">
+                    <p class="font-medium text-[#1DB389] text-sm">
+                        553%
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="dark:bg-[#242A41] bg-[#F4F7FF] p-8 h-44 flex justify-between rounded-md">
+            <div class="flex flex-col justify-between">
+                <p class="dark:text-[#8A96C5] text-[#62687D] font-medium">
+                    Likes
+                </p>
+                <h3 class="text-4xl font-bold">
+                    107
+                </h3>
+            </div>
+
+            <div class="flex flex-col justify-between">
+                <img src="img/icon-youtube.svg" alt="Youtube logo" class="w-5 h-5 ml-auto">
+                <div class="flex items-center gap-2">
+                    <img src="img/icon-down.svg" alt="Indicador de subida">
+                    <p class="font-medium text-[#DC414B] text-sm">
+                        19%
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="dark:bg-[#242A41] bg-[#F4F7FF] p-8 h-44 flex justify-between rounded-md">
+            <div class="flex flex-col justify-between">
+                <p class="dark:text-[#8A96C5] text-[#62687D] font-medium">
+                    Total Views
+                </p>
+                <h3 class="text-4xl font-bold">
+                    1407
+                </h3>
+            </div>
+
+            <div class="flex flex-col justify-between">
+                <img src="img/icon-youtube.svg" alt="Youtube logo" class="w-5 h-5 ml-auto">
+                <div class="flex items-center gap-2">
+                    <img src="img/icon-down.svg" alt="Indicador de subida">
+                    <p class="font-medium text-[#DC414B] text-sm">
+                        12%
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

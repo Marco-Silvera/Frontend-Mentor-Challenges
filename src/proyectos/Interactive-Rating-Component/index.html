@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating Component</title>
+    <link rel="stylesheet" href="../../output.css">
+    <script src="script.js" defer></script>
+</head>
+<style>
+    footer {
+        color: #FB7312;
+        color: #111316;
+        color: #252D36;
+        color: #7B8697;
+        color: #959EAB;
+        color: white;
+    }
+</style>
+
+<body class="bg-[#111316] w-screen h-screen flex justify-center items-center text-white px-5">
+    <section id="originalSection" class="bg-[#252D36] rounded-3xl w-96 min-h-96 p-8">
+        <img src="img/icon-star.svg" alt="estrella" class="bg-[#959EAB] p-3 rounded-full mb-8">
+        <h2 class="font-semibold text-2xl mb-4">
+            How did we do?
+        </h2>
+        <p class="font-semibold mb-6 text-[#959EAB] text-pretty">
+            Please let us know we did with your support request. All feedback is appreciated to help us improve our
+            offering!
+        </p>
+        <div class="flex justify-between mb-8">
+            <button
+                class="bg-[#7B8697] py-2 px-4 rounded-full hover:bg-[#959EAB] transition-all hover:text-[#252D36] font-semibold focus:bg-[#FB7312]">1
+            </button>
+            <button
+                class="bg-[#7B8697] py-2 px-4 rounded-full hover:bg-[#959EAB] transition-all hover:text-[#252D36] font-semibold focus:bg-[#FB7312]">2
+            </button>
+            <button
+                class="bg-[#7B8697] py-2 px-4 rounded-full hover:bg-[#959EAB] transition-all hover:text-[#252D36] font-semibold focus:bg-[#FB7312]">3
+            </button>
+            <button
+                class="bg-[#7B8697] py-2 px-4 rounded-full hover:bg-[#959EAB] transition-all hover:text-[#252D36] font-semibold focus:bg-[#FB7312]">4
+            </button>
+            <button
+                class="bg-[#7B8697] py-2 px-4 rounded-full hover:bg-[#959EAB] transition-all hover:text-[#252D36] font-semibold focus:bg-[#FB7312]">5
+            </button>
+        </div>
+        <button id="replaceButton"
+            class="button-submit uppercase bg-[#FB7312] hover:bg-white hover:text-[#FB7312] w-full py-2 rounded-full font-semibold tracking-wide">
+            Submit
+        </button>
+    </section>
+</body>
+
+</html>
