@@ -13,46 +13,54 @@
     <script src="script.js" defer></script>
 </head>
 
-<body class="bg-[#F9F9F9]">
+<body class="bg-[#F9F9F9] font-Epilogue text-[#686868] h-screen">
 
-    <header class="flex p-4">
+    <header class="flex justify-between items-center p-4 mb-4 relative">
         <img src="img/logo.svg" alt="Logo">
-        <img src="img/icon-menu.svg" alt="Menu">
-        <nav>
-            <ul>
-                <li class="flex">
-                    <button>Features</button>
-                    <img src="img/icon-arrow-down.svg" alt="Icono arrow down">
-                    <ul>
-                        <li class="flex">
-                            <img src="img/icon-todo.svg" alt="Lista">
+        <img class="menu" src="img/icon-menu.svg" alt="Menu">
+        <nav class="menu-list hidden absolute top-0 right-0 bg-[#F9F9F9] p-4 h-dvh w-60">
+            <div class="w-full flex justify-end mb-6">
+                <img src="img/icon-close-menu.svg" alt="Cerrar menu" class="close-menu">
+            </div>
+            <ul class="flex flex-col gap-4">
+                <li class="flex flex-col w-24">
+                    <button class="btn-features flex items-center gap-4 transition-all">
+                        Features
+                        <img class="arrow-down-features" src="img/icon-arrow-down.svg" alt="Icono arrow down">
+                    </button>
+
+                    <ul class="dropdown-features hidden mt-6">
+                        <li class="flex pl-8 items-center w-36 gap-4 mb-4">
+                            <img class="h-5" src="img/icon-todo.svg" alt="Lista">
                             Todo List
                         </li>
-                        <li class="flex">
-                            <img src="img/icon-calendar.svg" alt="Calendario">
+                        <li class="flex pl-8 items-center w-36 gap-4 mb-4">
+                            <img class="h-5" src="img/icon-calendar.svg" alt="Calendario">
                             Calendar
                         </li>
-                        <li class="flex">
-                            <img src="img/icon-reminders.svg" alt="Recordatorios">
+                        <li class="flex pl-8 items-center w-36 gap-4 mb-4">
+                            <img class="h-5" src="img/icon-reminders.svg" alt="Recordatorios">
                             Reminders
                         </li>
-                        <li class="flex">
-                            <img src="img/icon-planning.svg" alt="Planificación">
+                        <li class="flex pl-8 items-center w-36 gap-4 mb-4">
+                            <img class="h-5" src="img/icon-planning.svg" alt="Planificación">
                             Planning
                         </li>
                     </ul>
                 </li>
-                <li class="flex">
-                    <button>Company</button>
-                    <img src="img/icon-arrow-down.svg" alt="Icono arrow downº">
-                    <ul>
-                        <li>
+                <li class="flex flex-col w-24">
+                    <button class="btn-company flex items-center gap-4 transition-all">
+                        Company
+                        <img class="arrow-down-company" src="img/icon-arrow-down.svg" alt="Icono arrow downº">
+                    </button>
+                    <ul class="dropdown-company hidden mt-6">
+                        <li class="pl-8 mb-4 w-28">
                             History
                         </li>
-                        <li>
+                        <li class="pl-8 mb-4 w-28">
                             Our Team
                         </li>
-                        <li>
+                        <li class="pl-8 mb-4 w-28">
                             Blog
                         </li>
                     </ul>
@@ -64,17 +72,19 @@
                     About
                 </li>
             </ul>
-            <button class="w-full">Login</button>
-            <button class="w-full">Register</button>
+            <div class="w-full flex flex-col justify-center mt-8 gap-6">
+                <button class="">Login</button>
+                <button class="border-[1px] border-[#686868] rounded-xl py-2">Register</button>
+            </div>
         </nav>
     </header>
 
     <main class="flex flex-col-reverse">
-        <section class="justify-center text-center">
-            <h2 class="font-bold text-4xl mb-4">
+        <section class="justify-center text-center px-4">
+            <h2 class="font-bold text-[#141414] text-4xl mb-4 mt-12">
                 Make remote work
             </h2>
-            <p class="font-medium text-lg text-[#686868] mb-6">
+            <p class="font-medium text-lg mb-6">
                 Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
                 productivity soar.
             </p>
@@ -94,6 +104,7 @@
             <source srcset='img/image-hero-desktop.png' media="(min-width: 640px)">
             <img src="img/image-hero-mobile.png" alt="Hero image">
         </picture>
-    </main></body>
+    </main>
+</body>
 
 </html>
