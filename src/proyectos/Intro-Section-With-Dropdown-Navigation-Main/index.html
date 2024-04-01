@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Section With Dropdown Navigation Main</title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-[#F9F9F9]">
+
+    <header class="flex p-4">
+        <img src="img/logo.svg" alt="Logo">
+        <img src="img/icon-menu.svg" alt="Menu">
+        <nav>
+            <ul>
+                <li class="flex">
+                    <button>Features</button>
+                    <img src="img/icon-arrow-down.svg" alt="Icono arrow down">
+                    <ul>
+                        <li class="flex">
+                            <img src="img/icon-todo.svg" alt="Lista">
+                            Todo List
+                        </li>
+                        <li class="flex">
+                            <img src="img/icon-calendar.svg" alt="Calendario">
+                            Calendar
+                        </li>
+                        <li class="flex">
+                            <img src="img/icon-reminders.svg" alt="Recordatorios">
+                            Reminders
+                        </li>
+                        <li class="flex">
+                            <img src="img/icon-planning.svg" alt="Planificación">
+                            Planning
+                        </li>
+                    </ul>
+                </li>
+                <li class="flex">
+                    <button>Company</button>
+                    <img src="img/icon-arrow-down.svg" alt="Icono arrow downº">
+                    <ul>
+                        <li>
+                            History
+                        </li>
+                        <li>
+                            Our Team
+                        </li>
+                        <li>
+                            Blog
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Careers
+                </li>
+                <li>
+                    About
+                </li>
+            </ul>
+            <button class="w-full">Login</button>
+            <button class="w-full">Register</button>
+        </nav>
+    </header>
+
+    <main class="flex flex-col-reverse">
+        <section class="justify-center text-center">
+            <h2 class="font-bold text-4xl mb-4">
+                Make remote work
+            </h2>
+            <p class="font-medium text-lg text-[#686868] mb-6">
+                Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+                productivity soar.
+            </p>
+            <button
+                class="px-6 py-2 bg-[#141414] text-white font-medium text-lg rounded-xl mb-10 hover:bg-transparent hover:text-[#141414] border-[1px] border-transparent hover:border-[#141414] ">
+                Learn more
+            </button>
+            <div class="flex justify-around items-center">
+                <img src="img/client-databiz.svg" alt="databiz logo" class="h-4">
+                <img src="img/client-audiophile.svg" alt="audiophile logo" class="h-7">
+                <img src="img/client-meet.svg" alt="meet logo" class="h-4">
+                <img src="img/client-maker.svg" alt="maker logo" class="h-6">
+            </div>
+        </section>
+        <picture>
+            <source srcset='img/image-hero-mobile.png' media="(max-width: 639px)">
+            <source srcset='img/image-hero-desktop.png' media="(min-width: 640px)">
+            <img src="img/image-hero-mobile.png" alt="Hero image">
+        </picture>
+    </main></body>
+
+</html>

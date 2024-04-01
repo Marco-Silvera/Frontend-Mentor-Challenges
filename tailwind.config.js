@@ -9,7 +9,8 @@ module.exports = {
         'Outfit': ['Outfit', 'serif'],
         'Inter': ['Inter', 'serif'],
         'Figtree': ['Figtree', 'serif'],
-        'Jakarta': ['Plus Jakarta Sans', 'serif']
+        'Jakarta': ['Plus Jakarta Sans', 'serif'],
+        'Epilogue': ['Epilogue', 'serif'],
       }
     },
   },
