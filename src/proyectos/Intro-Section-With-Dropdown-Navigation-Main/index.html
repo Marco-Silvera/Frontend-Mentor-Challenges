@@ -15,76 +15,77 @@
 
 <body class="bg-[#F9F9F9] font-Epilogue text-[#686868]">
 
-    <header class="flex justify-between items-center p-4 mb-4">
+    <header class="flex justify-between items-center m-4 mb-4">
         <img src="img/logo.svg" alt="Logo">
-        <img class="menu" src="img/icon-menu.svg" alt="Menu">
-    </header>
+        <img class="menu md:hidden" src="img/icon-menu.svg" alt="Menu">
+        <nav id="menu" class="menu-list hidden top-0 right-0 h-full w-full absolute md:static md:block md:h-14 border-2 border-red-400">
+            <div class="fixed bg-[#141414] bg-opacity-75 left-0 top-0 w-full h-screen md:static md:block md:bg-transparent md:h-full">
+                <div class="fixed md:static  md:bg-transparent bg-[#F9F9F9] bg-opacity-100 right-0 top-0 w-60 h-screen p-4 border-2 border-blue-400 md:w-full md:h-full md:flex md:items-center md:justify-between md:p-0">
+                    <div class="w-full flex justify-end mb-8 md:hidden">
+                        <img src="img/icon-close-menu.svg" alt="Cerrar menu" class="close-menu">
+                    </div>
+                    <ul class="flex flex-col gap-4 pl-4 md:flex-row md:pl-10 md:gap-6">
+                        <li class="flex flex-col w-24">
+                            <button class="btn-features flex items-center gap-4 transition-all md:hover:text-[#141414] md:gap-2">
+                                Features
+                                <img class="arrow-down-features" src="img/icon-arrow-down.svg" alt="Icono arrow down">
+                            </button>
 
-    <nav id="menu" class="menu-list hidden top-0 right-0-0 h-full w-full absolute">
-        <div class="bg-[#141414] bg-opacity-75 left-0 top-0 w-full h-screen">
-            <div class="absolute bg-[#F9F9F9] bg-opacity-100 right-0 top-0 w-60 h-screen p-4">
-                <div class="w-full flex justify-end mb-8">
-                    <img src="img/icon-close-menu.svg" alt="Cerrar menu" class="close-menu">
-                </div>
-                <ul class="flex flex-col gap-4 pl-4">
-                    <li class="flex flex-col w-24">
-                        <button class="btn-features flex items-center gap-4 transition-all">
-                            Features
-                            <img class="arrow-down-features" src="img/icon-arrow-down.svg" alt="Icono arrow down">
-                        </button>
-
-                        <ul class="dropdown-features hidden mt-6">
-                            <li class="flex pl-8 items-center w-36 gap-4 mb-4">
-                                <img class="h-5" src="img/icon-todo.svg" alt="Lista">
-                                Todo List
-                            </li>
-                            <li class="flex pl-8 items-center w-36 gap-4 mb-4">
-                                <img class="h-5" src="img/icon-calendar.svg" alt="Calendario">
-                                Calendar
-                            </li>
-                            <li class="flex pl-8 items-center w-36 gap-4 mb-4">
-                                <img class="h-5" src="img/icon-reminders.svg" alt="Recordatorios">
-                                Reminders
-                            </li>
-                            <li class="flex pl-8 items-center w-36 gap-4 mb-4">
-                                <img class="h-5" src="img/icon-planning.svg" alt="Planificación">
-                                Planning
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex flex-col w-24">
-                        <button class="btn-company flex items-center gap-4 transition-all">
-                            Company
-                            <img class="arrow-down-company" src="img/icon-arrow-down.svg" alt="Icono arrow downº">
-                        </button>
-                        <ul class="dropdown-company hidden mt-6">
-                            <li class="pl-8 mb-4 w-28">
-                                History
-                            </li>
-                            <li class="pl-8 mb-4 w-28">
-                                Our Team
-                            </li>
-                            <li class="pl-8 mb-4 w-28">
-                                Blog
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        Careers
-                    </li>
-                    <li>
-                        About
-                    </li>
-                </ul>
-                <div class="w-full flex flex-col justify-center mt-8 gap-6">
-                    <button>Login</button>
-                    <button class="border-[1px] border-[#686868] rounded-xl py-2">Register</button>
+                            <ul class="dropdown-features hidden mt-6">
+                                <li class="flex pl-8 items-center w-36 gap-4 mb-4">
+                                    <img class="h-5" src="img/icon-todo.svg" alt="Lista">
+                                    Todo List
+                                </li>
+                                <li class="flex pl-8 items-center w-36 gap-4 mb-4">
+                                    <img class="h-5" src="img/icon-calendar.svg" alt="Calendario">
+                                    Calendar
+                                </li>
+                                <li class="flex pl-8 items-center w-36 gap-4 mb-4">
+                                    <img class="h-5" src="img/icon-reminders.svg" alt="Recordatorios">
+                                    Reminders
+                                </li>
+                                <li class="flex pl-8 items-center w-36 gap-4 mb-4">
+                                    <img class="h-5" src="img/icon-planning.svg" alt="Planificación">
+                                    Planning
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="flex flex-col w-24">
+                            <button class="btn-company flex items-center gap-4 transition-all md:hover:text-[#141414] md:gap-2">
+                                Company
+                                <img class="arrow-down-company" src="img/icon-arrow-down.svg" alt="Icono arrow downº">
+                            </button>
+                            <ul class="dropdown-company hidden mt-6">
+                                <li class="pl-8 mb-4 w-28">
+                                    History
+                                </li>
+                                <li class="pl-8 mb-4 w-28">
+                                    Our Team
+                                </li>
+                                <li class="pl-8 mb-4 w-28">
+                                    Blog
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="md:hover:text-[#141414] cursor-pointer">
+                            Careers
+                        </li>
+                        <li class="md:hover:text-[#141414] cursor-pointer">
+                            About
+                        </li>
+                    </ul>
+                    <div class="w-full flex flex-col justify-center mt-8 gap-6 md:flex-row md:m-0 md:w-52 md:gap-12">
+                        <button class="md:hover:text-[#141414]">Login</button>
+                        <button class="border-[1px] border-[#686868] rounded-xl py-2 md:px-4 md:hover:border-[#141414] md:hover:text-[#141414]">Register</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <main class="flex flex-col-reverse">
+    </header>
+
+
+    <main class="flex flex-col-reverse md:flex-row">
         <section class="justify-center text-center px-4">
             <h2 class="font-bold text-[#141414] text-4xl mb-4 mt-12">
                 Make remote work
